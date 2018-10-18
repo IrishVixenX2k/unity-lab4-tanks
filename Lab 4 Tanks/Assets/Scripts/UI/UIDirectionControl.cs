@@ -10,13 +10,13 @@ public class UIDirectionControl : MonoBehaviour
 
     private void Start()
     {
-        m_RelativeRotation = transform.parent.localRotation;
+        m_RelativeRotation = transform.parent.localRotation;//find local rotation of canvas
     }
 
 
     private void Update()
     {
         if (m_UseRelativeRotation)
-            transform.rotation = m_RelativeRotation;
+            transform.rotation = m_RelativeRotation;//sets its own rotation to local rotation
     }
 }

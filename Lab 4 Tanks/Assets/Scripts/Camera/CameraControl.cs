@@ -5,7 +5,7 @@ public class CameraControl : MonoBehaviour
     public float m_DampTime = 0.2f;      //approx time it takes to move to correct pos           
     public float m_ScreenEdgeBuffer = 4f;           //number added to size
     public float m_MinSize = 6.5f;                  //wont zoom in too much
-    public Transform[] m_Targets; //hidden in inspector - array of transforms
+    [HideInInspector] public Transform[] m_Targets; //hidden in inspector - array of transforms
 
 
     private Camera m_Camera;                        //represents the camera object
